@@ -15,59 +15,61 @@ const SERVICES = [
     id: 'marine-engineering',
     icon: Wrench,
     title: 'Marine Engineering & Technical Services',
-    desc: 'Full marine engineering support focusing on ship repair, proactive maintenance, and technical troubleshooting to keep your maritime assets performing at their best.',
+    desc: 'We provide full marine engineering support, focusing on ship repair, proactive maintenance, and technical troubleshooting to keep your maritime assets performing at their best.',
     details: 'Overhaul, diagnostics, repair, optimisation, and emergency interventions for propulsion, heavy machinery, and auxiliary systems.',
-    img: '/engineering.png',
+    img: '/engineering.webp',
   },
   {
     id: 'mechanical-electrical',
     icon: Zap,
     title: 'Mechanical, Electrical & Automation Engineering',
-    desc: 'Specialized installation, repair, and commissioning services for mechanical, electrical, electronic, and automation systems in marine and industrial sectors.',
+    desc: 'We offer specialized installation, repair, and commissioning services for mechanical, electrical, electronic, and automation systems in both marine and industrial sectors.',
     details: 'Installation, retrofitting, diagnostics, and modernisation of advanced control and automation systems.',
-    img: '/electronic.jpg',
+    img: '/electronic.webp',
   },
   {
     id: 'underwater',
     icon: Droplets,
     title: 'Underwater & Diving Services',
-    desc: "Certified diving specialists handle subsea maintenance, inspection, and repair to keep your vessel's hull efficient and compliant.",
+    desc: 'Our certified diving specialists handle subsea maintenance, inspection, and repair to keep your vessel’s hull efficient and compliant.',
     details: 'Underwater hull cleaning, propeller polishing, inspection, condition assessment, repairs, and certified diving contractor coordination.',
-    img: '/underwater.png',
+    img: '/underwater.webp',
   },
   {
     id: 'ship-repair',
     icon: Ship,
     title: 'Fabrication & Ship Repair',
-    desc: 'Complete solutions for structural integrity, including afloat repairs and dry-docking coordination. High-quality steelwork and fabrication that meet class standards.',
-    details: 'Afloat and dry-docking repair management, steel and structural fabrication, hull modifications, and end-to-end project coordination.',
-    img: '/repair.jpg',
+    desc: 'We offer complete solutions for structural integrity, including afloat repairs and dry-docking coordination. Our team delivers high-quality steelwork and fabrication that meet class standards.',
+    details: 'Afloat and dry-docking repair management, steel structural fabrication, hull modifications, and end-to-end project coordination for repairs and shipyard operations.',
+    img: '/repair.webp',
   },
   {
     id: 'inspection',
     icon: Eye,
     title: 'Inspection, Testing & NDT Services',
-    desc: 'Protecting your assets and ensuring compliance with thorough testing. Technical consultancy and audits for marine and industrial equipment.',
-    details: 'Non-destructive testing (NDT), condition assessments, comprehensive marine and industrial equipment audits, class-approved inspection procedures.',
-    img: '/inspection.jpg',
+    desc: 'We protect your assets and ensure compliance with thorough testing. Our team also offers technical consultancy and audits for marine and industrial equipment.',
+    details: 'Non-destructive testing (NDT), condition assessments, comprehensive marine and industrial equipment audits, technical consultancy for asset life extension, and class-approved inspection procedures.',
+    img: '/inspection.webp',
   },
   {
     id: 'ship-management',
     icon: Users,
     title: 'Ship Management Services',
-    desc: 'Complete care of your maritime assets. Our management services maximise vessel uptime while keeping strict safety standards and meeting international regulations.',
-    details: 'Technical, crew, and operational management of fleets. Fleet management, commercial performance, proactive maintenance, safety, and regulatory compliance.',
-    img: '/managment.jpg',
+    desc: 'We take complete care of your maritime assets. Our management services help maximize vessel uptime while keeping strict safety standards and meeting international regulations.',
+    details: 'Technical, crew, and operational management of fleets. Fleet management, commercial performance, proactive maintenance, safety, regulatory compliance, and maritime consultancy.',
+    img: '/managment.webp',
   },
 ];
 
 const WHY_US = [
   { icon: Shield, label: 'Safety-First Execution', desc: 'We strictly follow international maritime safety standards on every project.' },
-  { icon: Wrench, label: 'Multi-Disciplinary Capability', desc: 'Complete engineering, management, and repair solutions under one roof.' },
-  { icon: Clock, label: 'Rapid Response', desc: '24/7 availability for urgent vessel troubleshooting and maintenance.' },
-  { icon: CheckCircle, label: 'Compliance-Focused', desc: 'We ensure all assets meet regulatory and environmental requirements.' },
-  { icon: Globe, label: 'Global Reach', desc: 'Sri Lanka base with full international capabilities to serve clients worldwide.' },
-  { icon: Users, label: 'Project Coordination', desc: 'Expert supervision from first consultation to final commissioning.' },
+  { icon: Wrench, label: 'Multi-Disciplinary Capability', desc: 'We offer complete engineering, management, and repair solutions.' },
+  { icon: Clock, label: 'Rapid Response', desc: 'Our team is available 24/7 for urgent vessel troubleshooting and maintenance.' },
+  { icon: CheckCircle, label: 'Compliance-Focused Support', desc: 'We make sure your assets meet all regulatory and environmental requirements.' },
+  { icon: Globe, label: 'Global Reach', desc: 'Our Sri Lanka base lets us serve clients worldwide with full international capabilities.' },
+  { icon: Users, label: 'Project Coordination', desc: 'Our experts supervise every step, from the first consultation to final commissioning.' },
+  { icon: Anchor, label: 'Core Strength', desc: 'Highly skilled engineering and diving personnel with deep maritime knowledge.' },
+  { icon: Package, label: 'Cost-Effective', desc: 'End-to-end technical solutions with cost-effective operational management.' },
 ];
 
 const STATS = [
@@ -164,7 +166,7 @@ const App = () => {
       <nav className="fixed-nav glass" role="navigation" aria-label="Main navigation">
         <div className="container nav-container">
           <a href="#home" className="logo" aria-label="AMD Marine Lanka home">
-            <Anchor size={26} />
+            <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" />
             <div className="logo-text">
               <span className="logo-brand">AMD Marine Lanka</span>
               <span className="logo-sub">Pvt Ltd</span>
@@ -194,7 +196,7 @@ const App = () => {
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <section ref={heroRef} id="home" className="hero" aria-label="Hero section">
-        <div className="hero-bg" style={{ backgroundImage: 'url("/hero.png")' }} />
+        <div className="hero-bg" style={{ backgroundImage: 'url("/hero.webp")' }} />
         <div className="hero-overlay" />
         <div className="container hero-container">
           <div className="hero-content">
@@ -204,9 +206,9 @@ const App = () => {
               <span className="hero-accent">Across Every Ocean</span>
             </h1>
             <p className="hero-sub">
-              AMD Marine Lanka Pvt Ltd delivers complete, safety-focused, and cost-effective
-              technical solutions — from underwater hull cleaning to full fleet management
-              — for shipowners worldwide.
+              AMD Marine Lanka Pvt Ltd offers marine engineering, ship management, inspection,
+              repair, and operational support services. Based in Sri Lanka, we provide fast,
+              reliable, and cost-effective technical solutions to shipowners worldwide.
             </p>
             <div className="hero-btns">
               <a href="#services" className="btn-primary btn-lg">
@@ -260,7 +262,7 @@ const App = () => {
             <div className="vision-card glass">
               <h3>Our Vision</h3>
               <p>
-                To be a global leader in technical ship management and engineering services,
+                We aim to be a global leader in technical ship management and engineering services,
                 setting high standards for quality, reliability, and innovation in the maritime
                 industry.
               </p>
@@ -352,7 +354,7 @@ const App = () => {
               </p>
               <div className="about-reach">
                 {[
-                  'Extensive operations across Sri Lanka and internationally',
+                  'Extensive business operations across Sri Lanka and internationally',
                   'Contracting with global shipowners, operators, and agents',
                   'Partnerships with international shipyards and offshore companies',
                   'Seamless integration into global supply chains',
@@ -363,9 +365,17 @@ const App = () => {
                   </div>
                 ))}
               </div>
+              <div className="industrial-solutions" style={{ marginTop: '2rem' }}>
+                <h3>Industrial & General Engineering</h3>
+                <p>
+                  Our support goes beyond marine services to include land-based industries through
+                  specialized contracting and consultancy for offshore infrastructure and cross-industry
+                  mechanical support.
+                </p>
+              </div>
             </div>
             <div className="about-image glass">
-              <div className="about-img-inner" style={{ backgroundImage: 'url("/newship.jpg")' }} />
+              <div className="about-img-inner" style={{ backgroundImage: 'url("/newship.webp")' }} />
             </div>
           </div>
         </div>
@@ -390,7 +400,7 @@ const App = () => {
                 Request Supply <ArrowRight size={18} />
               </a>
             </div>
-            <div className="chandling-image" style={{ backgroundImage: 'url("/shipsupport.jpg")' }} />
+            <div className="chandling-image" style={{ backgroundImage: 'url("/shipsupport.webp")' }} />
           </div>
         </div>
       </section>
@@ -406,16 +416,16 @@ const App = () => {
           <div className="agency-grid">
             {[
               {
-                title: 'Local & International Representation',
-                body: 'Acting as local and international managing agents for shipowners, operators, and engineering firms.',
+                title: 'Acting as Managing Agents',
+                body: 'We act as local and international managing agents, providing dedicated representation for shipowners, operators, and engineering firms.',
               },
               {
                 title: 'Commercial Facilitation',
-                body: 'Facilitation of commercial agreements, port agency, and logistics support to ensure smooth operations.',
+                body: 'Facilitation of commercial agreements, port agency, and logistics support to ensure smooth business growth and operational efficiency.',
               },
               {
-                title: 'International Operations',
-                body: 'Extensive business operations across Sri Lanka and internationally — contracting with global shipowners, operators, and agents.',
+                title: 'Global Outreach',
+                body: 'Securing strategic contracts with international organizations and providing steady support across the globe through seamless supply chain integration.',
               },
             ].map(a => (
               <div key={a.title} className="agency-card">
@@ -500,7 +510,7 @@ const App = () => {
           <div className="footer-top">
             <div className="footer-brand">
               <div className="logo" style={{ marginBottom: '20px' }}>
-                <Anchor size={28} />
+                <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" />
                 <div className="logo-text">
                   <span className="logo-brand">AMD Marine Lanka</span>
                   <span className="logo-sub">Pvt Ltd</span>

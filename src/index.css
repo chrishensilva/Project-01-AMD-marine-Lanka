@@ -136,9 +136,14 @@ img { display:block; max-width:100%; }
   color:var(--primary);
   text-decoration:none;
 }
+.logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
 .logo-text { display:flex; flex-direction:column; line-height:1.2; }
-.logo-brand { font-size:1.05rem; font-weight:800; color:var(--primary); }
-.logo-sub   { font-size:0.68rem; color:var(--text-slate); font-weight:500; letter-spacing:0.05em; }
+.logo-brand { font-size:1.05rem; font-weight:800; color:var(--primary); text-transform: uppercase; letter-spacing: 0.02em; }
+.logo-sub   { font-size:0.68rem; color:var(--text-slate); font-weight:600; letter-spacing:0.05em; }
 .nav-links {
   display:flex;
   align-items:center;
@@ -428,6 +433,9 @@ img { display:block; max-width:100%; }
   line-height:1.5;
 }
 .reach-icon { color:var(--primary); flex-shrink:0; margin-top:1px; }
+.industrial-solutions h3 { font-size:1.15rem; color:var(--primary); margin-bottom:10px; }
+.industrial-solutions p  { font-size:0.95rem !important; color:var(--text-slate); line-height:1.6; }
+
 .about-image {
   border-radius:var(--r-xl);
   padding:14px;
