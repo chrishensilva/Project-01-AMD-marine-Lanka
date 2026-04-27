@@ -437,7 +437,7 @@ const App = () => {
         </div>
       </section>
 
-      {/* ── Contact ──────────────────────────────────────────────────────── */}
+      {/* ── Contact ────────────────────────────────────────────────────────sd */}
       {/*<section id="contact" ref={contactRef} className="section-padding contact-section" aria-label="Contact us">
         <div className="container">
           <div className="contact-card">
