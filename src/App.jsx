@@ -3,6 +3,7 @@ import {
   Ship, Anchor, Droplets, Wrench, Zap, Eye, Package,
   Users, Globe, ChevronRight, Mail, Phone, MapPin,
   Shield, Clock, CheckCircle, ArrowRight,
+  Linkedin, Facebook, Instagram, Twitter, Youtube,
 } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -437,73 +438,80 @@ const App = () => {
         </div>
       </section>
 
-      {/* ── Contact ────────────────────────────────────────────────────────sd */}
-      {/*<section id="contact" ref={contactRef} className="section-padding contact-section" aria-label="Contact us">
-        <div className="container">
-          <div className="contact-card">
-            <div className="contact-info">
-              <span className="eyebrow light">Get In Touch</span>
-              <h2>Partner with<br />AMD Marine Lanka</h2>
-              <p>
-                In the fast-paced maritime industry, having a reliable technical partner is key
-                to success. AMD Marine Lanka Pvt Ltd offers expert knowledge, a strong focus on
-                safety, and wide-ranging engineering solutions to keep your fleet running.
-              </p>
-              <div className="contact-links">
-                <div className="link-item">
-                  <Mail size={18} aria-hidden="true" />
-                  <a href="mailto:info@amdmarinelanka.com">info@amdmarinelanka.com</a>
-                </div>
-                <div className="link-item">
-                  <Phone size={18} aria-hidden="true" />
-                  <a href="tel:+94112345678">+94 11 234 5678</a>
-                </div>
-                <div className="link-item">
-                  <MapPin size={18} aria-hidden="true" />
-                  <span>Colombo, Sri Lanka</span>
-                </div>
-              </div>
-            </div>
-            <form
-              className="contact-form"
-              onSubmit={e => e.preventDefault()}
-              aria-label="Contact form"
-            >
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="fname">Full Name</label>
-                  <input id="fname" type="text" placeholder="John Smith" required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="femail">Email Address</label>
-                  <input id="femail" type="email" placeholder="john@example.com" required />
-                </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="fcompany">Company / Vessel Name</label>
-                <input id="fcompany" type="text" placeholder="Your Company or Vessel" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="fservice">Service Required</label>
-                <select id="fservice">
-                  <option value="">Select a Service</option>
-                  {SERVICES.map(s => (
-                    <option key={s.id} value={s.id}>{s.title}</option>
-                  ))}
-                  <option value="other">Other / General Inquiry</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label htmlFor="fmessage">Message</label>
-                <textarea id="fmessage" placeholder="Tell us about your requirements..." rows="4" required />
-              </div>
-              <button type="submit" className="btn-primary btn-lg">
-                Send Inquiry <ArrowRight size={18} />
-              </button>
-            </form>
+      {/* ── Contact ─────────────────────────────────────────────────────────── */}
+      <section id="contact" ref={contactRef} className="section-padding contact-section" aria-label="Contact AMD Marine Lanka">
+        {/* Decorative glow blobs */}
+        <div className="ct-blob ct-blob-1" aria-hidden="true" />
+        <div className="ct-blob ct-blob-2" aria-hidden="true" />
+
+        <div className="container ct-inner">
+
+          {/* Header */}
+          <div className="section-header">
+            <span className="eyebrow light">Get In Touch</span>
+            <h2 className="ct-heading">Connect With Us</h2>
+            <p className="ct-sub">
+              Our team is available around the clock. Reach out through any channel
+              and we'll respond as quickly as possible.
+            </p>
           </div>
+
+          {/* Info cards */}
+          <div className="ct-cards">
+
+            <div className="ct-card">
+              <div className="ct-icon">
+                <Phone size={26} aria-hidden="true" />
+              </div>
+              <span className="ct-label">Phone</span>
+              <a href="tel:+94770020462" className="ct-value">+94 77 002 0462</a>
+              <span className="ct-badge">Available 24 / 7</span>
+            </div>
+
+            <div className="ct-card">
+              <div className="ct-icon">
+                <Mail size={26} aria-hidden="true" />
+              </div>
+              <span className="ct-label">Email</span>
+              <a href="mailto:info@info@amdmarinegroup.com" className="ct-value">info@amdmarinegroup.com</a>
+              <span className="ct-badge">Quick Response</span>
+            </div>
+
+            <div className="ct-card">
+              <div className="ct-icon">
+                <MapPin size={26} aria-hidden="true" />
+              </div>
+              <span className="ct-label">Address</span>
+              <p className="ct-value">Colombo, Sri Lanka</p>
+              <span className="ct-badge">Indian Ocean Region</span>
+            </div>
+
+          </div>
+
+          {/* Social media */}
+          <div className="ct-social">
+            <p className="ct-social-label">Follow us on social media</p>
+            <div className="ct-social-links" role="list" aria-label="Social media links">
+              <a href="#" className="ct-social-btn" aria-label="LinkedIn" role="listitem" target="_blank" rel="noopener noreferrer">
+                <Linkedin size={20} />
+              </a>
+              <a href="#" className="ct-social-btn" aria-label="Facebook" role="listitem" target="_blank" rel="noopener noreferrer">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="ct-social-btn" aria-label="Instagram" role="listitem" target="_blank" rel="noopener noreferrer">
+                <Instagram size={20} />
+              </a>
+              <a href="#" className="ct-social-btn" aria-label="Twitter / X" role="listitem" target="_blank" rel="noopener noreferrer">
+                <Twitter size={20} />
+              </a>
+              <a href="#" className="ct-social-btn" aria-label="YouTube" role="listitem" target="_blank" rel="noopener noreferrer">
+                <Youtube size={20} />
+              </a>
+            </div>
+          </div>
+
         </div>
-      </section>*/}
+      </section>
       {/* ── Footer ───────────────────────────────────────────────────────── */}
       <footer className="footer" role="contentinfo">
         <div className="container">
@@ -518,8 +526,8 @@ const App = () => {
               </div>
               <p>Engineering Excellence Across Every Ocean. Your complete maritime technical partner based in Colombo, Sri Lanka.</p>
               <div className="footer-contact-list">
-                <span><Mail size={13} /> info@amdmarinelanka.com</span>
-                <span><Phone size={13} /> +94 11 234 5678</span>
+                <span><Mail size={13} /> info@amdmarinegroup.com</span>
+                <span><Phone size={13} /> +94 77 002 0462</span>
                 <span><MapPin size={13} /> Colombo, Sri Lanka</span>
               </div>
             </div>
