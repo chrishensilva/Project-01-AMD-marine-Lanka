@@ -160,8 +160,16 @@ const App = () => {
     return () => ScrollTrigger.getAll().forEach(t => t.kill());
   }, []);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+  }, [menuOpen]);
+
   return (
-    <div className="app">
+    <div className={`app${menuOpen ? ' nav-open-active' : ''}`}>
 
       {/* ── Nav ─────────────────────────────────────────────────────────── */}
       <nav className="fixed-nav glass" role="navigation" aria-label="Main navigation">
