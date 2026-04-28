@@ -1064,61 +1064,70 @@ a.ct-value:hover { color: #7ab3ff; }
 /* ═══════════════════════════════════════════════════════════════════════════
    ── Recruitment Placeholder Page ─────────────────────────────────────────
    ═══════════════════════════════════════════════════════════════════════════ */
-.recruit-root {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* ── Recruitment Page Specifics ────────────────────────────────────────── */
+.recruit-cta-card {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  border-radius: var(--r-xl);
   overflow: hidden;
-  background: #000e2e;
+  border: 1px solid var(--border);
+  min-height: 480px;
 }
-
-.recruit-card {
-  position: relative;
-  z-index: 10;
+.recruit-cta-content {
+  padding: clamp(40px, 8vw, 80px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 64px 56px;
-  max-width: 500px;
-  width: calc(100% - 40px);
-  background: rgba(255,255,255,0.07);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: var(--r-xl);
-  box-shadow: 0 32px 80px rgba(0,0,0,0.55);
+  justify-content: center;
 }
-.recruit-icon {
-  display: inline-flex;
+.recruit-cta-content h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 24px; }
+.recruit-cta-content p { color: var(--text-slate); margin-bottom: 32px; line-height: 1.7; }
+.recruit-cta-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-email-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: rgba(0,71,171,0.05);
+  border-radius: var(--r-md);
+  border: 1px solid rgba(0,71,171,0.1);
+  margin-bottom: 24px;
+}
+.email-icon-wrap {
+  width: 56px; height: 56px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px; height: 80px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.1);
-  border: 1.5px solid rgba(255,255,255,0.2);
-  color: #7ab3ff;
-  margin-bottom: 28px;
-}
-.recruit-title {
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
-  font-weight: 800;
+  background: var(--primary);
   color: #fff;
-  margin-bottom: 16px;
-  letter-spacing: -0.025em;
+  border-radius: 50%;
 }
-.recruit-sub {
-  font-size: 1rem;
-  color: rgba(255,255,255,0.72);
-  line-height: 1.75;
-  margin-bottom: 40px;
+.email-text span { display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; }
+.email-text a { font-size: clamp(1rem, 2vw, 1.3rem); font-weight: 800; color: var(--primary); }
+.cta-note { font-size: 0.85rem !important; color: var(--text-muted) !important; font-style: italic; }
+
+.footer-link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  font-size: 0.88rem;
+  color: var(--text-slate);
+  cursor: pointer;
+  transition: color 0.2s;
 }
-.recruit-back {
-  width: auto;
-  padding: 14px 28px;
-  gap: 10px;
+.footer-link-btn:hover { color: var(--primary); }
+
+@media (max-width: 960px) {
+  .recruit-cta-card { grid-template-columns: 1fr; }
+  .recruit-cta-image { height: 300px; order: -1; }
+}
+@media (max-width: 768px) {
+  .nav-back-btn span { display: none; }
+  .nav-back-btn { padding: 8px; }
 }
 
 /* ── Portal responsive ───────────────────────────────────────────────────── */

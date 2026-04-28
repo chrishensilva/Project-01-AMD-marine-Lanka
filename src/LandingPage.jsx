@@ -12,6 +12,7 @@ const LandingPage = () => {
   const dividerRef = useRef(null);
 
   useEffect(() => {
+    document.title = "AMD Marine Lanka | Engineering Excellence Across Every Ocean";
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
     tl.fromTo(logoRef.current,    { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, delay: 0.1 })

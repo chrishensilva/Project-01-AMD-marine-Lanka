@@ -114,6 +114,7 @@ const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    document.title = "Marine Engineering & Technical Services | AMD Marine Lanka";
     /* Hero entrance — runs immediately, no scrolltrigger */
     gsap.fromTo('.hero-badge',
       { y: 30, opacity: 0 },
@@ -175,7 +176,7 @@ const App = () => {
       <nav className="fixed-nav glass" role="navigation" aria-label="Main navigation">
         <div className="container nav-container">
           <a href="#home" className="logo" aria-label="AMD Marine Lanka home">
-            <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" />
+            <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" />
             <div className="logo-text">
               <span className="logo-brand">AMD Marine Lanka</span>
               <span className="logo-sub">Pvt Ltd</span>
@@ -302,7 +303,12 @@ const App = () => {
               const Icon = s.icon;
               return (
                 <div key={s.id} className="service-card" id={`svc-${s.id}`}>
-                  <div className="service-img" style={{ backgroundImage: `url("${s.img}")` }}>
+                  <div 
+                    className="service-img" 
+                    style={{ backgroundImage: `url("${s.img}")` }}
+                    role="img"
+                    aria-label={`${s.title} illustration`}
+                  >
                     <div className="service-img-overlay" />
                     <div className="service-img-icon"><Icon size={28} /></div>
                   </div>
@@ -526,7 +532,7 @@ const App = () => {
           <div className="footer-top">
             <div className="footer-brand">
               <div className="logo" style={{ marginBottom: '20px' }}>
-                <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" />
+                <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" loading="lazy" />
                 <div className="logo-text">
                   <span className="logo-brand">AMD Marine Lanka</span>
                   <span className="logo-sub">Pvt Ltd</span>
