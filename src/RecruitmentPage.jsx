@@ -82,6 +82,7 @@ const RecruitmentPage = () => {
   const servicesRef = useRef(null);
   const strengthsRef = useRef(null);
   const aboutRef = useRef(null);
+  const galleryRef = useRef(null);
   const ctaRef = useRef(null);
 
   useEffect(() => {
@@ -96,6 +97,7 @@ const RecruitmentPage = () => {
     fadeUp('.recruit-service-card', servicesRef.current, 0.1);
     fadeUp('.recruit-strength-card', strengthsRef.current, 0.1);
     fadeUp('.recruit-about-content', aboutRef.current, 0);
+    fadeUp('.gallery-item', galleryRef.current, 0.1);
     fadeUp('.recruit-cta-card', ctaRef.current, 0);
 
     return () => ScrollTrigger.getAll().forEach(t => t.kill());
@@ -231,8 +233,8 @@ const RecruitmentPage = () => {
               const Icon = s.icon;
               return (
                 <div key={s.id} className="service-card recruit-service-card">
-                  <div 
-                    className="service-img" 
+                  <div
+                    className="service-img"
                     style={{ backgroundImage: `url("${s.img}")` }}
                     role="img"
                     aria-label={`${s.title} illustration`}
@@ -275,6 +277,51 @@ const RecruitmentPage = () => {
         </div>
       </section>
 
+      {/* ── Gallery / Life at Sea ───────────────────────────────────────── */}
+      <section ref={galleryRef} className="section-padding recruit-gallery">
+        <div className="container">
+          <div className="section-header">
+            <span className="eyebrow">Life at Sea</span>
+            <h2>Our Global Operations</h2>
+            <p>A glimpse into the daily life of our dedicated personnel worldwide.</p>
+          </div>
+          <div className="gallery-grid">
+            <div className="gallery-item gallery-item-1 glass">
+              <div
+                className="gallery-img"
+                style={{ backgroundImage: 'url("./1.webp")' }}
+                role="img"
+                aria-label="Cargo ship at sunset"
+              />
+            </div>
+            <div className="gallery-item gallery-item-2 glass">
+              <div
+                className="gallery-img"
+                style={{ backgroundImage: 'url("./2.webp")' }}
+                role="img"
+                aria-label="Port operations in warm lighting"
+              />
+            </div>
+            <div className="gallery-item gallery-item-3 glass">
+              <div
+                className="gallery-img"
+                style={{ backgroundImage: 'url("./3.webp")' }}
+                role="img"
+                aria-label="Engine room technical work"
+              />
+            </div>
+            <div className="gallery-item gallery-item-4 glass">
+              <div
+                className="gallery-img"
+                style={{ backgroundImage: 'url("./4.webp")' }}
+                role="img"
+                aria-label="Hospitality crew serving food"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Apply / CTA ─────────────────────────────────────────────────── */}
       <section id="apply" ref={ctaRef} className="section-padding recruit-cta-section">
         <div className="container">
@@ -298,7 +345,7 @@ const RecruitmentPage = () => {
                 Shortlisted candidates will be contacted based on current and upcoming opportunities.
               </p>
             </div>
-            <div className="recruit-cta-image" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1524522173746-f628baad3644?q=80&w=2000&auto=format&fit=crop")' }} />
+            <div className="recruit-cta-image" style={{ backgroundImage: 'url("./cruise.webp")' }} />
           </div>
         </div>
       </section>
