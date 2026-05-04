@@ -39,7 +39,7 @@ const LandingPage = () => {
         <div ref={logoRef} className="portal-logo-block">
           <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="portal-logo-img" />
           <div className="portal-logo-text">
-            <span className="portal-brand">AMD Marine Lanka</span>
+            <h1 className="portal-brand">AMD Marine Lanka</h1>
             <span className="portal-brand-sub">Pvt Ltd</span>
           </div>
         </div>
@@ -48,10 +48,10 @@ const LandingPage = () => {
         <div ref={dividerRef} className="portal-divider" />
 
         {/* Tagline */}
-        <h1 ref={taglineRef} className="portal-tagline">
+        <h2 ref={taglineRef} className="portal-tagline">
           Engineering Excellence<br />
           <span className="portal-accent">Across Every Ocean</span>
-        </h1>
+        </h2>
 
         {/* Short description */}
         <p ref={descRef} className="portal-desc">

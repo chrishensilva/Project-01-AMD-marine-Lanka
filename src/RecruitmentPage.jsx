@@ -120,7 +120,7 @@ const RecruitmentPage = () => {
           <a href="/" className="logo" aria-label="AMD Marine Lanka home">
             <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" />
             <div className="logo-text">
-              <span className="logo-brand">AMD Marine Lanka</span>
+              <h1 className="logo-brand">AMD Marine Lanka</h1>
               <span className="logo-sub">Pvt Ltd</span>
             </div>
           </a>
@@ -153,10 +153,10 @@ const RecruitmentPage = () => {
         <div className="container hero-container">
           <div className="hero-content">
             <div className="hero-badge recruit-hero-badge">Crewing & Recruitment Specialists</div>
-            <h1 className="hero-title recruit-hero-title">
+            <h2 className="hero-title recruit-hero-title">
               Connecting Talent<br />
               <span className="hero-accent">To Maritime Excellence</span>
-            </h1>
+            </h2>
             <p className="hero-sub recruit-hero-sub">
               AMD Marine Lanka (Pvt) Ltd provides qualified marine, technical, and shore-based personnel
               to clients across the Middle East and the global maritime industry.

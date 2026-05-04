@@ -178,7 +178,7 @@ const App = () => {
           <a href="#home" className="logo" aria-label="AMD Marine Lanka home">
             <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" />
             <div className="logo-text">
-              <span className="logo-brand">AMD Marine Lanka</span>
+              <h1 className="logo-brand">AMD Marine Lanka</h1>
               <span className="logo-sub">Pvt Ltd</span>
             </div>
           </a>
@@ -211,10 +211,10 @@ const App = () => {
         <div className="container hero-container">
           <div className="hero-content">
             <div className="hero-badge">Sri Lanka's Premier Maritime Partner</div>
-            <h1 className="hero-title">
+            <h2 className="hero-title">
               Engineering Excellence<br />
               <span className="hero-accent">Across Every Ocean</span>
-            </h1>
+            </h2>
             <p className="hero-sub">
               AMD Marine Lanka Pvt Ltd offers marine engineering, ship management, inspection,
               repair, and operational support services. Based in Sri Lanka, we provide fast,
@@ -487,7 +487,7 @@ const App = () => {
                 <Mail size={26} aria-hidden="true" />
               </div>
               <span className="ct-label">Email</span>
-              <a href="mailto:info@info@amdmarinegroup.com" className="ct-value">info@amdmarinegroup.com</a>
+              <a href="mailto:info@amdmarinegroup.com" className="ct-value">info@amdmarinegroup.com</a>
               <span className="ct-badge">Quick Response</span>
             </div>
 
