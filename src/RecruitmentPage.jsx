@@ -35,7 +35,7 @@ const SERVICES = [
     title: 'Technical & Specialized Crew',
     desc: 'Skilled personnel for maintenance, shipyard activities, and offshore projects including riding squads.',
     details: 'Riding Squads, Dry Dock Teams, NDT Technicians, Fitters, Welders, and Electrical Technicians.',
-    img: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=2000&auto=format&fit=crop'
+    img: './repair.webp'
   },
   {
     id: 'shore-recruitment',
