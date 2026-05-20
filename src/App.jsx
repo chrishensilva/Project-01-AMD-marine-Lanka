@@ -176,7 +176,7 @@ const App = () => {
       <nav className="fixed-nav glass" role="navigation" aria-label="Main navigation">
         <div className="container nav-container">
           <a href="#home" className="logo" aria-label="AMD Marine Lanka home">
-            <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" />
+            <img src="/logo.png" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" />
             <div className="logo-text">
               <h1 className="logo-brand">AMD Marine Lanka</h1>
               <span className="logo-sub">Pvt Ltd</span>
@@ -303,8 +303,8 @@ const App = () => {
               const Icon = s.icon;
               return (
                 <div key={s.id} className="service-card" id={`svc-${s.id}`}>
-                  <div 
-                    className="service-img" 
+                  <div
+                    className="service-img"
                     style={{ backgroundImage: `url("${s.img}")` }}
                     role="img"
                     aria-label={`${s.title} illustration`}
@@ -487,7 +487,7 @@ const App = () => {
                 <Mail size={26} aria-hidden="true" />
               </div>
               <span className="ct-label">Email</span>
-              <a href="mailto:info@amdmarinegroup.com" className="ct-value">info@amdmarinegroup.com</a>
+              <a href="mailto:amdmarinelanka@gmail.com" className="ct-value">amdmarinelanka@gmail.com</a>
               <span className="ct-badge">Quick Response</span>
             </div>
 
@@ -532,7 +532,7 @@ const App = () => {
           <div className="footer-top">
             <div className="footer-brand">
               <div className="logo" style={{ marginBottom: '20px' }}>
-                <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" loading="lazy" />
+                <img src="/logo.png" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" loading="lazy" />
                 <div className="logo-text">
                   <span className="logo-brand">AMD Marine Lanka</span>
                   <span className="logo-sub">Pvt Ltd</span>
@@ -540,7 +540,7 @@ const App = () => {
               </div>
               <p>Engineering Excellence Across Every Ocean. Your complete maritime technical partner based in Colombo, Sri Lanka.</p>
               <div className="footer-contact-list">
-                <span><Mail size={13} /> info@amdmarinegroup.com</span>
+                <span><Mail size={13} /> amdmarinelanka@gmail.com</span>
                 <span><Phone size={13} /> +94 77 002 0462</span>
                 <span><MapPin size={13} /> Colombo, Sri Lanka</span>
               </div>

@@ -1216,10 +1216,11 @@ a.ct-value:hover { color: #7ab3ff; }
   position: relative;
   height: 320px;
 }
-.gallery-item-1 { grid-column: span 8; }
-.gallery-item-2 { grid-column: span 4; }
+.gallery-item-1 { grid-column: span 6; }
+.gallery-item-2 { grid-column: span 6; }
 .gallery-item-3 { grid-column: span 4; }
-.gallery-item-4 { grid-column: span 8; }
+.gallery-item-4 { grid-column: span 4; }
+.gallery-item-5 { grid-column: span 4; }
 
 .gallery-img {
   width: 100%;

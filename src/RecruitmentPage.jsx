@@ -118,7 +118,7 @@ const RecruitmentPage = () => {
       <nav className="fixed-nav glass" role="navigation" aria-label="Main navigation">
         <div className="container nav-container">
           <a href="/" className="logo" aria-label="AMD Marine Lanka home">
-            <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" />
+            <img src="/logo.png" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" />
             <div className="logo-text">
               <h1 className="logo-brand">AMD Marine Lanka</h1>
               <span className="logo-sub">Pvt Ltd</span>
@@ -313,6 +313,14 @@ const RecruitmentPage = () => {
             <div className="gallery-item gallery-item-4 glass">
               <div
                 className="gallery-img"
+                style={{ backgroundImage: 'url("/extra.jpeg")' }}
+                role="img"
+                aria-label="Professional maritime crew onboard operations"
+              />
+            </div>
+            <div className="gallery-item gallery-item-5 glass">
+              <div
+                className="gallery-img"
                 style={{ backgroundImage: 'url("./4.webp")' }}
                 role="img"
                 aria-label="Hospitality crew serving food"
@@ -338,7 +346,7 @@ const RecruitmentPage = () => {
                 <div className="email-icon-wrap"><Mail size={24} /></div>
                 <div className="email-text">
                   <span>Send your CV to:</span>
-                  <a href="mailto:amdmarinecrew@gmail.com">amdmarinecrew@gmail.com</a>
+                  <a href="mailto:amdmarinelanka@gmail.com">amdmarinelanka@gmail.com</a>
                 </div>
               </div>
               <p className="cta-note">
@@ -356,7 +364,7 @@ const RecruitmentPage = () => {
           <div className="footer-top">
             <div className="footer-brand">
               <div className="logo" style={{ marginBottom: '20px' }}>
-                <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" loading="lazy" />
+                <img src="/logo.png" alt="AMD Marine Lanka Logo" className="logo-img" decoding="async" loading="lazy" />
                 <div className="logo-text">
                   <span className="logo-brand">AMD Marine Lanka</span>
                   <span className="logo-sub">Pvt Ltd</span>
@@ -379,7 +387,7 @@ const RecruitmentPage = () => {
             </div>
             <div className="footer-col">
               <h4>Contact</h4>
-              <span><Mail size={13} /> amdmarinecrew@gmail.com</span>
+              <span><Mail size={13} /> amdmarinelanka@gmail.com</span>
               <span><MapPin size={13} /> Sri Lanka</span>
             </div>
           </div>

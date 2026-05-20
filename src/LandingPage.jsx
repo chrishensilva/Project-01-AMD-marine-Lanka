@@ -37,7 +37,7 @@ const LandingPage = () => {
 
         {/* Logo block */}
         <div ref={logoRef} className="portal-logo-block">
-          <img src="/Logo.webp" alt="AMD Marine Lanka Logo" className="portal-logo-img" />
+          <img src="/logo.png" alt="AMD Marine Lanka Logo" className="portal-logo-img" />
           <div className="portal-logo-text">
             <h1 className="portal-brand">AMD Marine Lanka</h1>
             <span className="portal-brand-sub">Pvt Ltd</span>
