@@ -209,15 +209,31 @@ img {
 .logo {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 14px;
   color: var(--primary);
   text-decoration: none;
+  padding: 6px 18px 6px 8px;
+  border-radius: 980px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1.5px solid rgba(30, 58, 106, 0.12);
+  box-shadow:
+    0 2px 12px rgba(30, 58, 106, 0.10),
+    0 0 0 1px rgba(212, 175, 55, 0.08);
+  transition: box-shadow var(--t), transform var(--t);
+}
+
+.logo:hover {
+  box-shadow:
+    0 4px 20px rgba(30, 58, 106, 0.18),
+    0 0 0 2px rgba(212, 175, 55, 0.18);
+  transform: translateY(-1px);
 }
 
 .logo-img {
-  height: 50px;
+  height: 52px;
   width: auto;
   object-fit: contain;
+  filter: drop-shadow(0 1px 4px rgba(30, 58, 106, 0.18));
 }
 
 .logo-text {
@@ -227,7 +243,7 @@ img {
 }
 
 .logo-brand {
-  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-size: clamp(0.9rem, 2vw, 1.08rem);
   font-weight: 800;
   color: var(--primary);
   text-transform: uppercase;
@@ -1403,15 +1419,46 @@ a.ct-value:hover {
 .portal-logo-block {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 22px;
   margin-bottom: 36px;
+  position: relative;
+}
+
+/* Radial glow behind the logo */
+.portal-logo-block::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, rgba(30, 58, 106, 0.12) 50%, transparent 70%);
+  filter: blur(8px);
+  pointer-events: none;
+  z-index: 0;
+  animation: logoGlowPulse 4s ease-in-out infinite;
+}
+
+@keyframes logoGlowPulse {
+  0%, 100% { opacity: 0.7; transform: translateY(-50%) scale(1); }
+  50% { opacity: 1; transform: translateY(-50%) scale(1.08); }
 }
 
 .portal-logo-img {
-  height: 108px;
+  position: relative;
+  z-index: 1;
+  height: 120px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 28px rgba(212, 175, 55, 0.25));
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 8px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .portal-logo-text {
@@ -1419,23 +1466,26 @@ a.ct-value:hover {
   flex-direction: column;
   text-align: left;
   line-height: 1.2;
+  position: relative;
+  z-index: 1;
 }
 
 .portal-brand {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5), 0 0 32px rgba(212, 175, 55, 0.15);
 }
 
 .portal-brand-sub {
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.72);
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  margin-top: 2px;
 }
 
 /* ── Accent divider ──────────────────────────────────────────────────────── */
